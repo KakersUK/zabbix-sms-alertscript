@@ -1,8 +1,22 @@
 #!/usr/bin/php
 <?php
+// Version 0.7
+
+// The service you're using. Choices include clickatell, budgetsms, nexmo and clockwork
+$service = "";
+
+// The API key.
+$apikey = "";
+
+// Username and password. With BudgetSMS use userid as password. Username not needed for Nexmo or Clockwork
+$user = "";
+$password = "";
+
+// The sender name / number. This has to conform to your service provider's regulations.
 $from = "";
 
 // if debug is true, log files will be generated
+$debug = false;
 
 // Where should this script log to? The directory must already exist.
 $logfilelocation = "/var/log/zabbix/zabbix_sms.log";
